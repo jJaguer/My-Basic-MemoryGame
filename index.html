@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game - Jones Lopez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="h1Game">Memory Game</h1>
+    <div id="canvasGame"></div>
+    <audio id="cardAudio">
+        <source src="f4ngy__card-flip.wav" type="audio/mpeg">
+    </audio>
+    <audio id="musicGame">
+        <source src="relaxingMusic.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="winMusic">
+        <source src="baltiyar13__win-or-success-game-title.wav" type="audio/mpeg">
+    </audio>
+    <div class="informationContent">
+        <label>Music <input type="range" id="volumeRange" min="0" max="1" step="0.1" value="0.3"></label>
+        <div id="time">00:00</div>
+        <div id="attempts">Attemps:</div>
+        <button id="buttonReset" onclick="location.reload()">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

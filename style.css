@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-image: url(7895078\ -\ freepik.jpg);
+  background-size: cover;
+}
+
+.h1Game {
+  margin: 10px auto;
+  padding: 8px 0;
+  max-width: 300px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #ffb846;
+  background-color: #3b83bd;
+  border: 2px solid #ffb846;
+  border-radius: 30px;
+}
+
+/*                  Canvas                     */
+
+#canvasGame {
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid div .cards {
+  padding: 25px;
+  width: 100px;
+  height: 100px;
+  font-size: 45px;
+  text-align: center;
+  color: #ffb846;
+  background-color: #3b83bd;
+  border: 2px solid #ffb846;
+  cursor: pointer;
+}
+
+.cardSelected {
+  background-color: #a3f3cf !important;
+  border: 2px solid #ffb846 !important;
+  color: #ffb846 !important;
+}
+
+.cardCorrect {
+  background-color: #008f39 !important;
+  border: 2px solid #ffb846 !important;
+  color: #ffb846 !important;
+}
+
+.wrong {
+  background-color: #92000a !important;
+  border: 2px solid #ffb846 !important;
+  color: #ffb846 !important;
+}
+
+/*                   Aside                     */
+
+/*Container*/
+
+.informationContent {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 550px;
+  height: 90px;
+  color: #ffb846;
+  background-color: #3b83bd;
+  border: 3px solid #ffb846;
+}
+
+/* Volume */
+
+/* Time */
+
+/* Attempts */
+
+/* Buttons */
+
+button {
+  width: 8em;
+  height: 45px;
+  font-size: 14px;
+  margin: 10px;
+  text-align: center;
+  background-color: #3b83bd;
+  border: 2px solid #ffb846;
+  color: #ffb846;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
