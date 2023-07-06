@@ -99,19 +99,19 @@ function crearGrilla(rows, columns) {
   const pairs = (rows * columns) / 2;
   const numbers = [];
 
-  // Crear un arreglo con los números necesarios para los pairs
+  // Create an arrangement with the numbers needed for the pairs
   for (let i = 0; i < pairs; i++) {
     numbers.push(i + 1);
     numbers.push(i + 1);
   }
 
-  // Mezclar los números aleatoriamente
+  // Shuffle numbers randomly
   for (let i = numbers.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [numbers[i], numbers[j]] = [numbers[j], numbers[i]];
   }
 
-  // Crear la grid y agregar los elementos a la misma
+  // Create the grid and add the elements to the grid
   const grid = document.createElement("div");
   grid.classList.add("grid");
 
@@ -135,10 +135,10 @@ function crearGrilla(rows, columns) {
   return grid;
 }
 
-// Obtener el elemento div con id "canvasGame"
+// Get div element with id "canvasGame".
 const canvasGame = document.getElementById("canvasGame");
 
-// Crear la grid y agregarla al elemento div
+// Create the grid and add it to the div element
 const grid = crearGrilla(6, 5);
 canvasGame.appendChild(grid);
 
@@ -183,7 +183,7 @@ function verifyFinal() {
       return `${minutes}:${seconds}`;
     };
 
-    // crea el fondo oscuro
+    // creates the dark background
     const fondo = document.createElement("div");
     fondo.style.position = "fixed";
     fondo.style.top = "0";
@@ -193,7 +193,7 @@ function verifyFinal() {
     fondo.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
     document.body.appendChild(fondo);
 
-    // crea la ventana emergente
+    // creates the pop-up window
     const ventana = document.createElement("div");
     ventana.style.position = "fixed";
     ventana.style.top = "50%";
@@ -207,7 +207,7 @@ function verifyFinal() {
     ventana.style.padding = "20px";
     fondo.appendChild(ventana);
 
-    // crea el mensaje y el botón
+    // creates the message and the button
     const mensaje = document.createElement("p");
     mensaje.textContent = "Good Game!";
     mensaje.style.margin = "5px auto";
